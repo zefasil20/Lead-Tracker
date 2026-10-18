@@ -1,69 +1,101 @@
 # Lead Tracker
 
-A lightweight Chrome extension for saving and managing important links or leads.
+<p align="center">
+  <img src="./icon.png" alt="Lead Tracker app icon" width="160" />
+</p>
 
-## Description
+<p align="center">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-green" />
+  <img alt="Platform" src="https://img.shields.io/badge/Platform-Chrome%20Extension-blue" />
+  <img alt="Stack" src="https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JavaScript-orange" />
+</p>
 
-Lead Tracker is a simple browser extension that lets you:
-- save a custom URL or text input
-- save the current active tab with one click
-- view your saved leads in a popup window
-- delete all saved leads
-- keep entries saved locally in the browser using `localStorage`
+A lightweight and practical Chrome extension for saving valuable web pages, potential leads, and important links in a single, easy-to-access popup.
 
-This project is built with plain HTML, CSS, and JavaScript, making it easy to understand and modify.
+## Overview
+
+Lead Tracker is built for people who frequently browse the web and want a simple way to keep track of pages they may need later. Whether it is a promising client lead, a useful article, or an important resource, the extension makes it easy to save a link instantly and revisit it later without cluttering your browser tabs.
+
+The project is intentionally simple and beginner-friendly, using only core web technologies to deliver a fast, reliable workflow.
 
 ## Features
 
-- Save a lead manually from the input field
-- Save the current tab URL instantly
-- Display saved leads as clickable links
-- Delete all saved entries with a double-click action
-- Persistent storage in the browser
+- Save custom URLs or notes manually
+- Save the current active tab in one click
+- View saved entries as clickable links
+- Clear all saved leads instantly
+- Keep data persistent with browser `localStorage`
+- Minimal setup with no external dependencies
+
+## Screenshots
+
+### Extension icon
+
+<p align="center">
+  <img src="./icon.png" alt="Lead Tracker extension icon" width="140" />
+</p>
+
+> This project currently focuses on a clean, minimal popup interface. It is intentionally easy to extend with additional features such as editing, categories, and search.
 
 ## Project Structure
 
 ```text
 Lead Tracker/
-├── index.html      # Popup layout
-├── index.js        # Extension logic
-├── style.css       # Styling for the popup
-├── manifest.json   # Chrome extension configuration
-├── icon.png        # Extension icon
-└── README.md       # Project documentation
+├── index.html        # Popup UI
+├── index.js          # Extension logic and local storage handling
+├── style.css         # Popup styling
+├── manifest.json     # Chrome extension manifest (Manifest V3)
+├── icon.png          # Extension icon
+├── README.md         # Project documentation
+└── LICENSE           # Optional license file
 ```
 
-## How to Use
+## Installation
 
-1. Open Google Chrome or a Chromium-based browser.
-2. Go to `chrome://extensions`.
+1. Open Google Chrome or another Chromium-based browser.
+2. Navigate to `chrome://extensions`.
 3. Enable Developer mode.
-4. Click "Load unpacked".
-5. Select this project folder.
-6. Click the extension icon in the toolbar to open the popup.
+4. Click `Load unpacked`.
+5. Select the project folder.
+6. Click the extension icon in the toolbar to begin using it.
 
-### Saving a lead
-- Type a URL or value in the input box.
+## Usage
+
+### Save a lead manually
+- Enter a URL or custom value in the input field.
 - Click `SAVE INPUT`.
 
-### Saving the current tab
-- Open the page you want to save.
-- Click `SAVE TAB` in the extension popup.
+### Save the current tab
+- Open the page you want to keep.
+- Click `SAVE TAB`.
 
-### Deleting all leads
-- Double-click `DELLETE ALL`.
+### Delete saved entries
+- Double-click `DELLETE ALL` to clear the list.
 
 ## Tech Stack
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
-- Chrome Extension Manifest v3
+- Chrome Extension Manifest V3
 
 ## Notes
 
-This extension uses the `tabs` permission so it can access the current browser tab URL. Saved leads are stored in the browser's local storage, so they remain available until manually cleared.
+This extension requests the `tabs` permission so it can access the current page URL. Saved entries are stored in the browser's local storage and remain available until manually cleared.
+
+## Future Enhancements
+
+- Add editing and deleting for individual leads
+- Add search and filtering for saved entries
+- Support categories or tags
+- Improve the popup interface with a more modern design
+- Add export/import support for saved data
 
 ## License
 
-This project is open for personal learning and modification.
+This project is open for learning, experimentation, and personal use.
+
+## Contributing
+
+Contributions are welcome. If you want to improve the extension, feel free to open a pull request or suggest enhancements.
+
